@@ -1,0 +1,23 @@
+body{
+
+    background-color: #dbdad6;
+
+
+    /*sizes*/
+    width: 100%;
+    min-height: 100%;
+    min-width: 320px;
+    color: var(--paragraph-color);
+    font-size: 100%;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/butler_ultra_light.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: 'swap';
+  }
