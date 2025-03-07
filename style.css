@@ -12,6 +12,7 @@ body{
     word-wrap: break-word;
     overflow-wrap: anywhere;
     overflow-x: hidden;
+    font-family: 'Nunito sans', sans-serif;
 }
 
 @font-face {
