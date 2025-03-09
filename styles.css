@@ -1,8 +1,85 @@
-* {background-color: #dbdad6;
+* {
+    box-sizing: border-box;
+    background-color: #dbdad6;
+    padding: 0;
+    margin: 10;
 
 }
+.header__padding{
+    justify-content: space-between;
+    padding: 3px;
+    border-bottom: solid;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+}
 .header__title{
-
+    padding: 0;
+    margin: 0;
+    margin-right: 3px;
+    
+}
+.image__pfp{
+    /* padding-left: 80px; */
+    /* padding-right: 80px; */
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    align-items: center;
+    justify-content: center ;
+}
+.pfp__pic{
+    /* height: 100%; */
+    /* width: 100%; */
+    border-radius: 50%;
+    object-fit: cover;
+    scale: 1.5;
+}
+.about__me{
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    align-items: center;
+    justify-content: center;
     padding: 100px;
-
+    
+}
+.about__me_par{
+    font-family: Nunito Sans, sans-serif, 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #20211f;
+}
+.about__container{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-basis: auto;
+    gap: 30px;
+    
+    
+    align-items: flex-start;
+    margin: 82px;
+    overflow: hidden;
+}
+.bedmirror__pic{
+    width: 500px;
+    height: auto;    
+}
+.about__title{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #20211f;
+}
+.about__work__par{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #20211f;
+}
+.bedmirror__pic{
+    margin-top: 65px;
 }
