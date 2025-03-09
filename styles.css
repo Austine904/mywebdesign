@@ -2,23 +2,27 @@
     box-sizing: border-box;
     background-color: #dbdad6;
     padding: 0;
-    margin: 10;
+    /* margin: 10; */
 
 }
 .header__padding{
     justify-content: space-between;
-    padding: 3px;
-    border-bottom: solid;
-    border-top: solid;
-    border-left: solid;
-    border-right: solid;
-    border-width: 1px;
+    border: 1px solid;
+    height: 50px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
 }
 .header__title{
-    padding: 0;
-    margin: 0;
-    margin-right: 3px;
     
+    width: 80px;
+    top: 0px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    height: 49px;
+    
+    transform: translateX(00px);
+    transform: translateY(-20px);
 }
 .image__pfp{
     /* padding-left: 80px; */
@@ -38,11 +42,10 @@
 }
 .about__me{
     display: flex;
-    padding-top: 200px;
     padding-bottom: 150px;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 200px;
     
 }
 .about__me_par{
@@ -55,31 +58,143 @@
     padding-top: 30px;
     padding-bottom: 150px;
     align-items: center;
-    justify-content: center;
-    flex-basis: auto;
+    position: relative;
+    
     gap: 30px;
+    flex-wrap: wrap;
+    border: 1px solid;
     
-    
-    align-items: flex-start;
-    margin: 82px;
+    margin: 2px;
     overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .bedmirror__pic{
     width: 500px;
-    height: auto;    
+    height: auto;
+    padding: 30px;
+    margin-right: 65px;   
 }
 .about__title{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #20211f;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    /* justify-content: space-evenly; */
+    /* align-items: start; */
 }
 .about__work__par{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
     line-height: 28px;
     color: #20211f;
+    /* width: 600px; */
+    position: relative;
+    border: 1px solid;
+    
+    padding-right: 60px;
+    margin-right: 20px;
+    
+    
 }
-.bedmirror__pic{
-    margin-top: 65px;
+
+.darksofa__img_circle{
+
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    
+    
+}
+.brownsitting__img{
+    width: 300px;
+    height: auto;
+    padding-left: 0px;
+    scale: 0.5;
+    
+    
+}
+.darksofa__img{
+    position: absolute;
+    
+}
+.darksitting__img{
+    margin-top: 100px;
+    height: 500px;
+    width: 65%;
+    padding: 0px;
+    
+
+}
+
+.darksitting__img__pos{
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    margin-top: 1000px;
+}
+.center__images__pos{
+
+}
+
+.header {
+    background-color: #dbdad6; /* Dark background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+}
+
+
+.header__link::before,
+.header__link {
+    color: white; /* Make text stand out */
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.header__link::before {
+    left: -15px; /* Positioning left line */
+}
+
+.header__link::after {
+    right: -15px; /* Positioning right line */
+}
+
+
+
+
+.header__link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: white;
+    z-index: 0;
+}
+
+.header__link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+    cursor: pointer;
 }
