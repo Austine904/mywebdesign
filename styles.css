@@ -1,170 +1,70 @@
 * {
-    box-sizing: border-box;
     background-color: #dbdad6;
-    padding: 0;
-    /* margin: 10; */
+}
 
-}
-body{
-    margin: 0;
-    padding: 0;
-    
-    
-}
-.container{
-    position: relative;
-    height: 100vh;
-    overflow-y: auto;
-    perspective: 10px;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-.header__padding{
-    justify-content: space-between;
-    border: 1px solid;
-    height: 50px;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-}
-.header__title{
-    
-    width: 80px;
-    top: 0px;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    height: 49px;
-    
-    transform: translateX(00px);
-    transform: translateY(-20px);
-}
-.image__pfp{
-    /* position: absolute; */
-    background-attachment: scroll;
-    transform: translateY(1px);
-    display: flex;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    align-items: center;
-    justify-content: center;
-}
-    
-.pfp__pic{
-    border-radius: 50%;
-    object-fit: cover;
-    scale: 1.5;
-}
-.about__me{
-    display: flex;
-    padding-bottom: 150px;
-    align-items: center;
-    justify-content: center;
-    padding: 180px;
-    /* position: absolute; */
-    
-}
-.about__me_par{
-    font-family: Nunito Sans, sans-serif, 'Courier New', Courier, monospace;
-    text-align: center;
-    color: #20211f;
-}
-.about__container{
-    display: flex;
-    padding-top: 30px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 30px;
-    /* flex-wrap: wrap; */
-    border: 1px solid;
-    margin: 2px;
-    overflow: hidden;
-}
-.bedmirror__pic{
-    width: 500px;
-    height: auto;
-    padding: 30px;
-    margin-right: 65px;   
-}
-.about__title{
-    font-family: 'Nunito Sans', sans-serif;
+.container {}
+
+
+header {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    font-size: 18px;
-    color: #20211f;
-    padding: 20px;
+    font-size: 30px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-around;
-    /* justify-content: space-evenly; */
-    /* align-items: start; */
-}
-.about__work__par{
-    font-family: 'Nunito Sans', sans-serif;
-    width: 100%;
-    font-size: 18px;
-    line-height: 28px;
-    color: #20211f;
-    /* width: 600px; */
-    position: relative;
-    border: 1px solid;
-    
-    padding: 60px;
-    margin: 20px;
-    
-    
+
+
+
 }
 
-.darksofa__img_circle{
+.vertical__line {
+    margin-bottom: 0px;
+    width: 1px;
+    height: 60px;
+    background-color: black;
+    margin-left: 10px;
 
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+}
+
+.text__pfp__wrap {
     position: absolute;
-    bottom: 0px;
-    left: 40%;
-    
-    
+    top: 30%;
+    font-size: 24px;
+    font-weight: bold;
+    transform: translateY(150px);
+    background: none;
+
+
 }
-.brownsitting__img{
-    width: 300px;
-    height: auto;
-    padding-left: 0px;
-    scale: 0.5;
-    
-    
-}
-.darksitting__img{
-    margin-top: 10px;
-    height: 300px;
-    width: 300px;
+
+.pfp__pic {
+    position: absolute;
+    top: 50%;
     border-radius: 50%;
-    transform: translateX(300px);
-    
-    
-
+    /* animation: picrotate 5s linear infinite; */
 }
 
-.darksitting__img__pos{
-    position: relative;
-    bottom: 0px;
-    right: 0px;
-    margin-top: 10px;
-}
-.center__images__pos{
-
-}
-
-.header {
-    background-color: #dbdad6;
-    padding: 10px 20px;
+.image__pfp {
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-    position: relative;
-}
-
-.header__content {
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
+
+.text__pfp__wrap__austine {
+    background-color: transparent;
+    transform: translateX(-200px);
+    font-size: 140px;
+    font-family: 'Dancing script';
+}
+
+.text__pfp__wrap__ochieng {
+    background-color: transparent;
+    transform: translateX(220px);
+    font-size: 140px;
+    font-family: 'Dancing script';
+}
+
+/* @keyframes picrotate{
+    from {transform: translateX(0%);}
+    to{transform: translateX(100%);}
+} */
