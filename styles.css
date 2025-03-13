@@ -1,4 +1,4 @@
-* {
+body {
     background-color: #dbdad6;
 }
 
@@ -6,21 +6,19 @@
 
 
 header {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: 30px;
     display: flex;
-
-
-
+    z-index: 100;
+    position: relative;
 }
 
 .vertical__line {
     margin-bottom: 0px;
     width: 1px;
-    height: 60px;
+    height: 30px;
     background-color: black;
     margin-left: 10px;
 
@@ -33,6 +31,7 @@ header {
     font-weight: bold;
     transform: translateY(150px);
     background: none;
+    z-index: 97;
 
 
 }
@@ -41,13 +40,16 @@ header {
     position: absolute;
     top: 50%;
     border-radius: 50%;
-    /* animation: picrotate 5s linear infinite; */
+    z-index: 95;
+    
+
 }
 
 .image__pfp {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* transform: translateZ(-200px); */
 }
 
 .text__pfp__wrap__austine {
@@ -64,7 +66,27 @@ header {
     font-family: 'Dancing script';
 }
 
-/* @keyframes picrotate{
-    from {transform: translateX(0%);}
-    to{transform: translateX(100%);}
-} */
+.text__pfp__wrap__inside{
+    position: absolute;
+    top: 30%;
+    font-size: 24px;
+    font-weight: bold;
+    transform: translateY(150px);
+    background: none;
+    z-index: 95;
+
+}
+.text__pfp__wrap__austine__inside{
+    background-color: transparent;
+    transform: translateX(-200px);
+    font-size: 140px;
+    font-family: 'Dancing script';
+    color: #fcf9ce;
+}
+.text__pfp__wrap__ochieng__inside{
+    background-color: transparent;
+    transform: translateX(220px);
+    font-size: 140px;
+    font-family: 'Dancing script';
+    color: #fcf9ce;
+}
