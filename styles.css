@@ -41,7 +41,7 @@ header {
     top: 50%;
     border-radius: 50%;
     z-index: 95;
-    
+
 
 }
 
@@ -49,7 +49,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transform: translateZ(-200px); */
 }
 
 .text__pfp__wrap__austine {
@@ -66,7 +65,7 @@ header {
     font-family: 'Dancing script';
 }
 
-.text__pfp__wrap__inside{
+.text__pfp__wrap__inside {
     position: absolute;
     top: 30%;
     font-size: 24px;
@@ -76,17 +75,34 @@ header {
     z-index: 95;
 
 }
-.text__pfp__wrap__austine__inside{
+
+.text__pfp__wrap__austine__inside {
     background-color: transparent;
     transform: translateX(-200px);
     font-size: 140px;
     font-family: 'Dancing script';
     color: #fcf9ce;
 }
-.text__pfp__wrap__ochieng__inside{
+
+.text__pfp__wrap__ochieng__inside {
     background-color: transparent;
     transform: translateX(220px);
     font-size: 140px;
     font-family: 'Dancing script';
     color: #fcf9ce;
+}
+
+.arch__image {
+    
+    position: absolute;
+    margin-left: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 70%;
+    width: 300px;
+    height: 1000px;
+    object-fit: cover;
+    clip-path: ellipse(100% 70% at 50% 100%);
+
 }
